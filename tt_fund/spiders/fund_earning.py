@@ -14,7 +14,7 @@ from tt_fund.settings import save_item_in_csv
 class FundEarningSpider(scrapy.Spider):
     name = 'fund_earning'
     allowed_domains = ['eastmoney.com']
-    # 股票型ft=gp，混合型ft=hh
+    # 股票型ft=gp,混合型ft=hh
     start_urls = ["http://fund.eastmoney.com/data/rankhandler.aspx?op=ph&dt=kf&ft={}&rs=&gs=0&sc=zzf&st=desc&qdii=&" \
                   "tabSubtype=,,,,,&pi=1&pn=10000&dx=1&v=0.42187391938911856".format(i) for i in ["gp", "hh"]]
     # 表头仅写入一次
