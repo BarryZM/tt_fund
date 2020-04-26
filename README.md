@@ -28,7 +28,7 @@
 
 
 
-- 文件名：beixiang.py （上海MarketType=1, 深圳MarketType=3）
+- 文件名：beixiang.py
 
 - 字段含义
 
